@@ -1,0 +1,77 @@
+/* Reset default margins and set base font size */
+html {
+  font-size: 100%; /* 1rem = 16px by default */
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    #042135 0%,
+    #041C2C 0%,
+    #041e2f 11%,
+    #052636 31%,
+    #062e48 51%,
+    #083d61 72%,
+    #0a4d79 82%,
+    #0c5d92 100%
+  );
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar Container */
+.navbar {
+  margin: 5%;
+  padding: 1rem 1.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: rgba(3, 27, 44, 0.51);
+  backdrop-filter: blur(2.5rem); /* 40px = 2.5rem */
+  -webkit-backdrop-filter: blur(2.5rem);
+  box-shadow: 0 0 3.75rem #BBAEE9; /* 60px = 3.75rem */
+  border-radius: 1rem;
+}
+
+/* CICR Logo Text */
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #3773AA;
+  white-space: nowrap;
+  transition: transform 0.3s ease; /* smooth scaling */
+  cursor: pointer; /* optional: shows it's interactive */
+}
+
+/* Nav Links Container */
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+/* Styled Anchor Links as Buttons */
+.nav-links a {
+  text-decoration: none;
+  color: #BBAEE9;
+  border: 0.125rem hidden #BBAEE9;
+  padding: 0.4rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  box-shadow: 0 0 0.625rem #BBAEE9; /* 10px = 0.625rem */
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.nav-links a:hover {
+  background-color: #BBAEE9;
+  color: #031B2C;
+}
+
+.logo:hover {
+  transform: scale(1.1); /* zooms in by 10% */
+}
