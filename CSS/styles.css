@@ -1,0 +1,158 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 400vh;
+  background: linear-gradient(
+    to bottom,
+    #042135 0%,
+    #041C2C 2%,
+    #041e2f 9%,
+    #052636 31%,
+    #062e48 51%,
+    #083d61 65%,
+    #0a4d79 82%,
+    #0c5d92 100%
+  );
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+  margin: 5%;
+  padding: 1rem 1.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(3, 27, 44, 0.51);
+  backdrop-filter: blur(1.5rem);
+  -webkit-backdrop-filter: blur(1.5rem);
+  box-shadow: 0 0 1.75rem #BBAEE9;
+  border-radius: 1rem;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #3773AA;
+  white-space: nowrap;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #BBAEE9;
+  border: 0.125rem hidden #BBAEE9;
+  padding: 0.4rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  box-shadow: 0 0 0.625rem #BBAEE9;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: #BBAEE9;
+  color: #031B2C;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.timeline-container {
+  transform: translate(0px, 500px);
+  position: relative;
+}
+
+.timeline-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 5%;
+  position: relative;
+}
+
+.dot ,.dot2 {
+  width: 2rem;
+  height: 2rem;
+  background-color: #3771A8;
+  border-radius: 50%;
+  flex-shrink: 0;
+  border: 3px solid white;
+  position: relative;
+  z-index: 1;
+}
+
+.line {
+  height: 0.2rem;
+  background-color: #3771A8;
+  width: 30vw;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 0;
+}
+
+.box {
+  background-color: rgba(0, 0, 0, 0.25);
+  color: white;
+  padding: 1rem;
+  border-radius: 3rem;
+  width: clamp(250px, 30vw, 320px);
+  box-shadow: 0 0 40px rgba(55, 113, 168, 0.3);
+  height: 250px;
+  z-index: 1;
+}
+
+.timeline-left {
+  justify-content: flex-start;
+}
+
+.timeline-left .dot {
+  order: 3;
+}
+
+.timeline-left .line {
+  order: 2;
+}
+
+.timeline-left .box {
+  order: 1;
+}
+
+
+
+
+
+.register-button a
+{
+  text-decoration: none;
+  color: #BBAEE9;
+  border: 0.125rem hidden #BBAEE9;
+  padding: 0.8rem 1.2rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  box-shadow: 0 0 0.625rem #BBAEE9;
+  transition: all 0.3s ease;
+}
+
+.register-button a:hover {
+  background-color: #BBAEE9;
+  color: #031B2C;
+}
+
+.register-button{
+  margin: 5%;
+}
+
