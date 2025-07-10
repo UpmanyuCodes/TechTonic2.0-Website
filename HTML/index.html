@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home</title>
+  <link rel="stylesheet" href="../CSS/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@3/tsparticles.bundle.min.js"></script>
+
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.24/build/spline-viewer.js"></script>
+
+
+</head>
+<body>
+ <div id="tsparticles"></div>
+<div id="Navbar"></div>
+
+<!-- Wrapper for intro and robot -->
+<div class="hero-section">
+  <div class="intro">Welcome to TechTonic 2.0</div>
+
+  <!-- ROBOT SPLINE MODEL -->
+  <spline-viewer
+    class="Model"
+    url="https://prod.spline.design/tadU1KA9UFUbO-HT/scene.splinecode">
+  </spline-viewer> 
+</div>
+
+<div id="HomeContent"></div>
+
+
+  <div id="HomeContent"></div>
+
+  <!-- JS -->
+  <script src="../JS/nav.js"></script>
+  <script src="../JS/home.js"></script>
+</body>
+</html>
