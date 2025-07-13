@@ -33,3 +33,30 @@ cards.forEach((card, index) => {
 });
 
 updateCarousel();
+
+let startX = 0;
+let endX = 0;
+
+const carouselElement = document.querySelector('.carousel');
+
+// Touch start
+carouselElement.addEventListener("touchstart", (e) => {
+  startX = e.touches[0].clientX;
+});
+
+// Touch end
+carouselElement.addEventListener("touchend", (e) => {
+  endX = e.changedTouches[0].clientX;
+  handleSwipe();
+});
+
+function handleSwipe() {
+  const threshold = 50; // minimum swipe distance in px
+  const diff = startX - endX;
+
+  if (diff > threshold) {
+    document.getElementById("next").click(); 
+  } else if (diff < -threshold) {
+    document.getElementById("prev").click(); 
+  }
+}
