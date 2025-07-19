@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechTonic 2.0 - Events</title>
+  <link rel="stylesheet" href="../CSS/styles.css">
+  <link rel="stylesheet" href="../CSS/Event.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.25/build/spline-viewer.js"></script>
+</head>
+<body>
+
+  <!-- Header with Navigation -->
+  <header class="navbar glass-panel">
+    <div class="logo">TechTonic 2.0</div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="Event.html">Events</a>
+      <a href="#" class="btn">Register Now</a>
+    </nav>
+    <button class="mobile-menu-icon" id="mobile-menu-icon">&#9776;</button>
+  </header>
+
+  <main>
+    <section class="carousel-section">
+      <h2 class="section-title">Our Events</h2>
+      <div class="carousel">
+        <div class="card glass-panel">
+            <h3>DAY 1</h3>
+            <p></p>
+        </div>
+        <div class="card glass-panel">
+            <h3>DAY 2</h3>
+            <p></p>
+        </div>
+        <div class="card glass-panel">
+            <h3>DAY 3</h3>
+            <p></p>
+        </div>
+      </div>
+      <div class="arrow-controls">
+        <button class="arrow btn" id="prev">&larr;</button>
+        <button class="arrow btn" id="next">&rarr;</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Background Spline Model -->
+  <div class="spline-container">
+    <spline-viewer class="Model2" url="https://prod.spline.design/EjGJhQ8t7VAAebRq/scene.splinecode"></spline-viewer>
+  </div>
+
+  <!-- JavaScript Files -->
+  <script src="../JS/main.js"></script>
+  <script src="../JS/Event.js"></script>
+
+</body>
+</html>
